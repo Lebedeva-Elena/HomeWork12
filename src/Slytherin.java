@@ -5,8 +5,6 @@ public class Slytherin extends Khogvarts {
     private int resourcefulness;
     private int lustForPower;
 
-
-
     public Slytherin(String name, String surname, int magic, int transgression, int trick, int resoluteness,
                      int ambition, int resourcefulness,
                      int lustForPower) {
@@ -28,17 +26,17 @@ public class Slytherin extends Khogvarts {
                 ", lustForPower=" + lustForPower +
                 "} ";
     }
+
     public void compareTo(Slytherin other) {
         int countThis = this.trick + this.resoluteness + this.ambition + this.resourcefulness + this.lustForPower;
         int countOther = other.trick + other.resoluteness + other.ambition + this.resourcefulness + this.lustForPower;
         if (countThis > countOther) {
-            printComparableStudent(this,other);
+            printComparableStudent(this, other);
         } else if (countThis < countOther) {
             printComparableStudent(other, this);
-        }else{
+        } else {
             System.out.println("Студенты одинаково учатся");
         }
-
     }
 
     private void printComparableStudent(Slytherin bestStudent, Slytherin worseStudent) {

@@ -4,10 +4,6 @@ public class Hufflepuff extends Khogvarts {
     private int allegiance;
     private int fairness;
 
-    public int getFairness() {
-        return fairness;
-    }
-
     public Hufflepuff(String name, String surname, int magic, int transgression, int industry,
                       int allegiance, int fairness) {
         super(name, surname, magic, transgression);
